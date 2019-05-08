@@ -1,0 +1,180 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sleep-1
+spec:
+  template:
+    spec:
+      containers:
+      - name: sleep-1
+        image: "alpine:latest"
+        command: ["sleep",  "5"]
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "500M"
+      restartPolicy: Never
+  backoffLimit: 4
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sleep-2
+spec:
+  template:
+    spec:
+      containers:
+      - name: sleep-2
+        image: "alpine:latest"
+        command: ["sleep",  "5"]
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "500M"
+      restartPolicy: Never
+  backoffLimit: 4
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sleep-3
+spec:
+  template:
+    spec:
+      containers:
+      - name: sleep-3
+        image: "alpine:latest"
+        command: ["sleep",  "5"]
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "500M"
+      restartPolicy: Never
+  backoffLimit: 4
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sleep-4
+spec:
+  template:
+    spec:
+      containers:
+      - name: sleep-4
+        image: "alpine:latest"
+        command: ["sleep",  "5"]
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "500M"
+      restartPolicy: Never
+  backoffLimit: 4
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sleep-5
+spec:
+  template:
+    spec:
+      containers:
+      - name: sleep-5
+        image: "alpine:latest"
+        command: ["sleep",  "5"]
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "500M"
+      restartPolicy: Never
+  backoffLimit: 4
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sleep-6
+spec:
+  template:
+    spec:
+      containers:
+      - name: sleep-6
+        image: "alpine:latest"
+        command: ["sleep",  "5"]
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "500M"
+      restartPolicy: Never
+  backoffLimit: 4
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sleep-7
+spec:
+  template:
+    spec:
+      containers:
+      - name: sleep-7
+        image: "alpine:latest"
+        command: ["sleep",  "5"]
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "500M"
+      restartPolicy: Never
+  backoffLimit: 4
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sleep-8
+spec:
+  template:
+    spec:
+      containers:
+      - name: sleep-8
+        image: "alpine:latest"
+        command: ["sleep",  "5"]
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "500M"
+      restartPolicy: Never
+  backoffLimit: 4
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sleep-9
+spec:
+  template:
+    spec:
+      containers:
+      - name: sleep-9
+        image: "alpine:latest"
+        command: ["sleep",  "5"]
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "500M"
+      restartPolicy: Never
+  backoffLimit: 4
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sleep-10
+spec:
+  template:
+    spec:
+      containers:
+      - name: sleep-10
+        image: "alpine:latest"
+        command: ["sleep",  "5"]
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "500M"
+      restartPolicy: Never
+  backoffLimit: 4
+---
