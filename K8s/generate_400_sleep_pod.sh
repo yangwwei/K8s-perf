@@ -5,7 +5,7 @@ rm -rf $targetFile
 touch $targetFile
 
 c=1
-while [ $c -le 10 ]
+while [ $c -le 2000 ]
 do
    echo “Execute $c times”
 

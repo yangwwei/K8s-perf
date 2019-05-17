@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: sleep5
+  name: sleep5-2000
   labels:
     app: sleep-5s
     tier: sleep
 spec:
   # modify replicas according to your case
-  replicas: 480
+  replicas: 1 
   selector:
     matchLabels:
       tier: sleep
@@ -19,7 +19,7 @@ spec:
       containers:
       - name: sleep-5s
         image: "alpine:latest"
-        command: ["/bin/ash", "-ec", "while :; do echo '.'; sleep 5 ; done"]
+        command: ["sleep 5"]
         resources:
           requests:
             cpu: "500m"

@@ -14,15 +14,17 @@ echo "    spec:" >> ${targetFile}
 echo "      containers:" >> ${targetFile}
 
 c=1
-while [ $c -le 10 ]
+while [ $c -le 400 ]
 do
    echo “Execute $c times”
-   echo "      -name: sleep$c" >> $targetFile
-   echo "       image: \"alpine:latest\"" >> $targetFile
-   echo "       command: [\"sleep\", \"5\"]" >> $targetFile
-   echo "       resources:" >> $targetFile
-   echo "         requests:" >> $targetFile
-   echo "           cpu: \"500m\"" >> $targetFile
-   echo "           memory: \"500M\"" >> $targetFile
+   echo "      - name: sleep$c" >> $targetFile
+   echo "        image: \"alpine:latest\"" >> $targetFile
+   echo "        command: [\"sleep\", \"5\"]" >> $targetFile
+   echo "        resources:" >> $targetFile
+   echo "          requests:" >> $targetFile
+   echo "            cpu: \"500m\"" >> $targetFile
+   echo "            memory: \"500M\"" >> $targetFile
    (( c++ ))
 done
+
+ echo "      restartPolicy: Never" >> $targetFile
